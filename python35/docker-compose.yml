@@ -1,0 +1,13 @@
+version: '2'
+services:
+  python3.5:
+    image: 'sgoblin/python3.5'
+    environment:
+      - PROJECT_NAME=python35
+    volumes:
+      - '/home/mrsu/work/learn/python:/home/mrsu/python'
+    entrypoint:
+      - bash
+    tty: true
+    ports:
+      - '8090:8090'

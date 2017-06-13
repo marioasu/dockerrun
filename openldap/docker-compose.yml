@@ -1,0 +1,11 @@
+version: '2'
+services:
+  openldap:
+    image: mrsu/openldap
+    restart: always
+    environment:
+      - SLAPD_ROOT_PASSWORD=asdasd
+    volumes:
+      - ./data:/var/lib/ldap
+    ports:
+      - '389:389'
