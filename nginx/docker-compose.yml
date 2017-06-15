@@ -10,4 +10,3 @@ services:
       - ./host.d:/etc/nginx/host.d
     ports:
       - 80:80
-      - 443:443
