@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    image: mrsu/nginx
+    restart: always
+    environment:
+      - USER_ID=1001
+    volumes:
+      - ./data:/data
+      - ./host.d:/etc/nginx/host.d
+    ports:
+      - 80:80
+      - 443:443
